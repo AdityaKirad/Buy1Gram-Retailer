@@ -1,0 +1,68 @@
+---
+import { Image } from "astro:assets"
+import Saunf from "../assets/saunf.png"
+import Masoor from "../assets/masoor.png"
+import KabuliChana from "../assets/kabuli-chana.png"
+import GroundNut from "../assets/groundnut.png"
+---
+
+<div class="text-center">
+  <h2 class="mb-8 text-[2rem] sm:text-5xl md:text-[5rem]">Our Products</h2>
+  <div
+    class="grid grid-cols-2 gap-4 sm:grid-cols-3 sm:gap-8 md:grid-cols-4 [&_img]:mx-auto [&_p]:line-clamp-3 sm:[&_p]:overflow-visible"
+  >
+    <section>
+      <Image class="object-cover object-center" src={Saunf} alt="Saunf" />
+      <div>
+        <h2>Saunf</h2>
+        <p>
+          test weight, standard germination, seedling length (cm) and seedling
+          dry weight (mg), vigour index-I and Vigour index-II.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <Image class="object-cover object-center" src={Masoor} alt="Masoor" />
+      <div>
+        <h2>Masoor Daal</h2>
+        <p>
+          good source of carbohydrates, proteins, fibres, vitamins, and other
+          micronutrients. Masoor dal is the vegetable that has the highest level
+          of protein (26%) after soybeans and hemp.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <Image
+        class="object-cover object-center"
+        src={KabuliChana}
+        alt="Kabuli Chana"
+      />
+      <div>
+        <h2>Kabuli Chana</h2>
+        <p>
+          The seeds are high in protein. Garbanzo Beans common in Mediterranean
+          diet found in two varieties, the small dark skinned beans known as
+          desi channa .
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <Image
+        class="object-cover object-center"
+        src={GroundNut}
+        alt="Groundnut"
+      />
+      <div>
+        <h2>Groudnut</h2>
+        <p>
+          rich in potassium, calcium, phosphorus and B vitamins which offers you
+          with a host of health benefits
+        </p>
+      </div>
+    </section>
+  </div>
+</div>

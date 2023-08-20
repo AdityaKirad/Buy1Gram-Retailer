@@ -1,0 +1,62 @@
+---
+import { Image } from "astro:assets"
+import Badges from "../assets/badges.webp"
+import Profit from "../assets/profit.webp"
+import Growth from "../assets/growth.webp"
+---
+
+<div>
+  <h2 class="mb-8 text-center text-[2rem] sm:text-5xl md:text-[5rem]">
+    WHY BIG?
+  </h2>
+  <div
+    class="grid grid-cols-1 gap-4 text-justify sm:grid-cols-2 sm:gap-8 md:grid-cols-3 [&>section]:flex [&>section]:flex-col [&>section]:justify-between"
+  >
+    <section>
+      <div class="flex items-center justify-center gap-4">
+        <Image
+          class="w-40 object-cover object-center"
+          src={Badges}
+          alt="Badge"
+        />
+        <h3>Best Quality</h3>
+      </div>
+      <p>
+        We ensure our customers get high-quality products by providing sourcing
+        services and quality control services to our marketplace sellers.
+      </p>
+    </section>
+
+    <section>
+      <div class="flex items-center justify-center gap-4">
+        <Image
+          class="w-40 object-cover object-center"
+          src={Profit}
+          alt="Profit"
+        />
+        <h3>High Margin Profit</h3>
+      </div>
+      <p>
+        In order to provide retailers with a high-profit margin we directly
+        purchase products from manufacturers and ensure competitive pricing for
+        our retailers.
+      </p>
+    </section>
+
+    <section>
+      <div class="flex items-center justify-center gap-4">
+        <Image
+          class="w-40 object-cover object-center"
+          src={Growth}
+          alt="Growth"
+        />
+        <h3>Growth Opportunities</h3>
+      </div>
+      <p>
+        We provide suppliers and manufacturers with growth opportunities by
+        offering a vast market reach, Increased brand visibility, and access to
+        a wider customer base.
+      </p>
+    </section>
+  </div>
+</div>

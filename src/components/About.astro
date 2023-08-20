@@ -1,0 +1,27 @@
+---
+import { Image } from "astro:assets"
+import AboutImage from "../assets/about-image.png"
+---
+
+<div class="flex flex-col gap-4 sm:flex-row">
+  <div class="sm:min-w-[40%]">
+    <Image
+      class="h-full w-full object-cover object-center"
+      src={AboutImage}
+      alt="Pulses"
+    />
+  </div>
+  <div>
+    <h2 class="mb-8 text-center text-[2rem] sm:text-5xl md:text-[5rem]">
+      About Us
+    </h2>
+    <p class="text-justify">
+      We, Buy One Gram, Jaipur, Rajasthan, strive to offer excellent services to
+      our prestigious customers & are known for trusted & superior quality of
+      products. All the products are stored safely in our clean & updated store.
+      Understanding our customer's need & demand, we provide a wide variety of
+      pulses & cereals of high nutritional value. With the professional approach
+      to a traditional niche, we offer prompt & on-time services.
+    </p>
+  </div>
+</div>

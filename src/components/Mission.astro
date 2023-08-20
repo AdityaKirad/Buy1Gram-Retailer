@@ -1,0 +1,38 @@
+---
+import { Image } from "astro:assets"
+import PulseLine from "../assets/pulses-line.png"
+---
+
+<div class="flex flex-col items-center justify-center text-center sm:flex-row">
+  <div>
+    <Image
+      class="w-full object-cover object-center sm:rotate-90"
+      src={PulseLine}
+      alt="Pulses in line"
+    />
+  </div>
+  <div>
+    <section>
+      <h2 class="text-[2rem] sm:text-5xl md:text-[5rem]">Our Mission</h2>
+      <p>
+        To Provide An Effective National Forum, With Regional And Global
+        Aspirations, By Bringing Together Stakeholder Along The Value Chain.
+      </p>
+    </section>
+    <section>
+      <h2 class="text-[2rem] sm:text-5xl md:text-[5rem]">Our Vission</h2>
+      <p>
+        To Make Indian Pulses And Grains Industry And Trade Globally
+        Competitive; And In So Doing, Help Advance India's Food Security And
+        Nutrition Security.
+      </p>
+    </section>
+  </div>
+  <div>
+    <Image
+      class="w-full object-cover object-center sm:rotate-90"
+      src={PulseLine}
+      alt="Pulses in line"
+    />
+  </div>
+</div>

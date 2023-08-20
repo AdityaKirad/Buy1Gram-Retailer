@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    ::-webkit-scrollbar {
+        @apply hidden;
+    }
+
+    html {
+        text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%;
+        @apply text-[62.5%] scroll-smooth snap-mandatory snap-y box-border antialiased;
+    }
+
+    body {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        @apply bg-gradient-to-tl from-[#f0b746] via-[#b1bb7f] to-[#5a93a0] text-[1.6rem] text-white;
+    }
+
+    main>div {
+        @apply p-[1.125em] h-screen h-dynamicScreen snap-start snap-always overflow-hidden;
+    }
+
+    h1,
+    h2,
+    h3 {
+        @apply font-bold text-black;
+    }
+}
